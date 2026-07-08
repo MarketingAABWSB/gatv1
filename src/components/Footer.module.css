@@ -1,0 +1,142 @@
+.footer {
+  background: #000000;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 2.25rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1.2fr 1.3fr 1.2fr;
+  gap: 2rem;
+  padding-bottom: 2rem;
+}
+
+.tagline {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.65;
+  margin-bottom: 1rem;
+  max-width: 320px;
+}
+
+.socials {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.social {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.8);
+  transition: var(--transition);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.social:hover {
+  border-color: var(--clr-accent);
+  color: #ffffff;
+  background: var(--clr-accent);
+}
+
+
+.colTitle {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 1rem;
+}
+
+.linkList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerLink {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6);
+  transition: var(--transition);
+  text-decoration: none;
+}
+
+.footerLink:hover {
+  color: var(--clr-accent);
+}
+
+.nestedLinkList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-top: 0.35rem;
+  padding-left: 0.75rem;
+  border-left: 1px solid var(--clr-border);
+  list-style: none;
+}
+
+.footerSubLink {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.4);
+  transition: var(--transition);
+  text-decoration: none;
+}
+
+.footerSubLink:hover {
+  color: var(--clr-accent);
+}
+
+.contactList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.contactItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.contactIcon {
+  flex-shrink: 0;
+  margin-top: 3px;
+  color: var(--clr-accent);
+}
+
+.bottom {
+  border-top: 1px solid var(--clr-border);
+  padding: 1rem 1.5rem;
+  text-align: center;
+}
+
+.bottom p {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.4);
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}

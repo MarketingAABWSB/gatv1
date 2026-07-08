@@ -1,0 +1,32 @@
+.toggle {
+  display: flex;
+  align-items: center;
+  background: var(--clr-surface);
+  border: 1px solid var(--clr-border);
+  border-radius: 999px;
+  padding: 3px;
+  gap: 2px;
+}
+
+.btn {
+  font-family: var(--font-heading);
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.3rem 0.65rem;
+  border-radius: 999px;
+  color: var(--clr-text-2);
+  transition: var(--transition);
+  letter-spacing: 0.03em;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: var(--clr-white);
+}
+
+.btn.active {
+  background: var(--clr-accent);
+  color: var(--clr-white);
+}
