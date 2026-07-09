@@ -8,7 +8,7 @@ export const translations = {
     services: { en: 'Services', ms: 'Servis Kami' },
     facility: { en: 'Our Facilities', ms: 'Fasiliti Kami' },
     projek: { en: 'Projects & Programs', ms: 'Projek & Program' },
-    carInsurance: { en: 'Car Insurance', ms: 'Insurans Kereta' },
+
     blog: { en: 'Blog', ms: 'Blog' },
     contactUs: { en: 'Contact Us', ms: 'Hubungi Kami' },
   },
@@ -122,7 +122,7 @@ export const translations = {
 
   // --- SERVICES PAGE ---
   services: {
-    title: { en: 'Our Services', ms: 'Perkhidmatan Kami' },
+    title: { en: 'Our Services', ms: 'Servis Kami' },
     subtitle: {
       en: 'Comprehensive automotive solutions for every need.',
       ms: 'Penyelesaian automotif yang komprehensif untuk setiap keperluan.',
@@ -157,16 +157,6 @@ export const translations = {
     by: { en: 'By', ms: 'Oleh' },
   },
 
-  // --- INSURANCE PAGE ---
-  insurance: {
-    title: { en: 'Car Insurance', ms: 'Insurans Kereta' },
-    subtitle: { en: 'Motor Insurance & Road Tax Renewal Service', ms: 'Perkhidmatan Pembaharuan Insurans Motor & Cukai Jalan' },
-    desc: {
-      en: 'We offer convenient motor insurance and road tax renewal services right at our service centre. Save time and renew your coverage while your car is being serviced.',
-      ms: 'Kami menawarkan perkhidmatan pembaharuan insurans motor dan cukai jalan yang mudah terus di pusat servis kami. Jimat masa dan perbarui perlindungan anda semasa kereta anda sedang diservis.',
-    },
-    contactBtn: { en: 'Enquire Now', ms: 'Tanya Sekarang' },
-  },
 
   // --- PROJEK PAGE ---
   projek: {

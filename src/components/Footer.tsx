@@ -18,17 +18,22 @@ export default function Footer() {
         <div className={styles.brand}>
           <div style={{ marginBottom: '0.75rem' }}>
             <Image
-              src="/assets/gat-logo.png"
+              src="/assets/gat-logo.png?v=2"
               alt="GAT Logo"
               width={140}
               height={42}
               style={{ objectFit: 'contain' }}
+              unoptimized
             />
+          </div>
+          <div style={{ fontSize: '0.8rem', color: 'var(--clr-text-2)', marginBottom: '0.75rem', lineHeight: 1.4 }}>
+            <p style={{ fontWeight: 600 }}>No. Pendaftaran: 1242808-V</p>
+            <p style={{ fontWeight: 600 }}>KEM KEW: K10140485222253613</p>
           </div>
           <p className={styles.tagline}>{t('footer.footerSubtitle')}</p>
           <div className={styles.socials}>
             <a
-              href="#"
+              href="https://www.tiktok.com/@gat.services.k.tganu1284"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.social}
@@ -40,7 +45,7 @@ export default function Footer() {
               </svg>
             </a>
             <a
-              href="#"
+              href="https://web.facebook.com/GermanAutoTech.GATServicesSdnBhdM?mibextid=ZbWKwL&_rdc=1&_rdr#"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.social}
@@ -52,7 +57,7 @@ export default function Footer() {
               </svg>
             </a>
             <a
-              href="#"
+              href="https://api.whatsapp.com/send/?phone=60199391284&text&type=phone_number&app_absent=0"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.social}
@@ -119,16 +124,32 @@ export default function Footer() {
               </svg>
               <span>Lot 13106, Kawasan Perindustrian Gong Badak, 21300 Kuala Nerus, Terengganu.</span>
             </div>
-            <div className={styles.contactItem} style={{ alignItems: 'center' }}>
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className={styles.contactIcon}>
+            <div className={styles.contactItem} style={{ alignItems: 'flex-start' }}>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className={styles.contactIcon} style={{ marginTop: '4px' }}>
                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1.23h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.83a16 16 0 0 0 6.29 6.29l.95-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
               </svg>
-              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.2rem 0.4rem', alignItems: 'center' }}>
-                <a href="tel:096674832" className={styles.footerLink}>09-6674832</a>
-                <span style={{ opacity: 0.3, fontSize: '0.8rem' }}>|</span>
-                <a href="tel:0199391284" className={styles.footerLink}>019-9391284</a>
-                <span style={{ opacity: 0.3, fontSize: '0.8rem' }}>|</span>
-                <a href="tel:0196671284" className={styles.footerLink}>019-6671284</a>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.3rem' }}>
+                <div>
+                  <span style={{ fontSize: '0.72rem', color: 'rgba(255,255,255,0.4)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                    {lang === 'en' ? 'Office' : 'Pejabat'}
+                  </span>
+                  <br />
+                  <a href="tel:096674832" className={styles.footerLink}>09-6674832</a>
+                </div>
+                <div>
+                  <span style={{ fontSize: '0.72rem', color: 'rgba(255,255,255,0.4)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                    {lang === 'en' ? 'Emergency 1' : 'Kecemasan 1'}
+                  </span>
+                  <br />
+                  <a href="https://api.whatsapp.com/send/?phone=60199391284&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className={styles.footerLink}>019-9391284</a>
+                </div>
+                <div>
+                  <span style={{ fontSize: '0.72rem', color: 'rgba(255,255,255,0.4)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                    {lang === 'en' ? 'Emergency 2' : 'Kecemasan 2'}
+                  </span>
+                  <br />
+                  <a href="https://api.whatsapp.com/send/?phone=60199391284&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className={styles.footerLink}>019-6671284</a>
+                </div>
               </div>
             </div>
             <div className={styles.contactItem}>
@@ -139,20 +160,7 @@ export default function Footer() {
               <a href="mailto:gatservices0817@gmail.com" className={styles.footerLink}>gatservices0817@gmail.com</a>
             </div>
 
-            {/* Operating Hours */}
-            <div style={{ marginTop: '0.4rem', paddingTop: '0.4rem', borderTop: '1px solid var(--clr-border)' }}>
-              <span className={styles.specLabel} style={{ fontSize: '0.65rem', color: 'var(--clr-text-3)', marginBottom: '0.2rem', display: 'block' }}>
-                {lang === 'en' ? 'OPERATING HOURS' : 'WAKTU OPERASI'}
-              </span>
-              <div style={{ fontSize: '0.8rem', color: 'var(--clr-text-2)', lineHeight: 1.35 }}>
-                <p>
-                  <strong>{lang === 'en' ? 'Sat – Thu:' : 'Sab – Kha:'}</strong> 9:30 AM – 6:00 PM
-                </p>
-                <p style={{ marginTop: '0.1rem' }}>
-                  <strong style={{ color: 'var(--clr-accent-dark)' }}>{lang === 'en' ? 'Fri:' : 'Jum:'}</strong> <span style={{ color: 'var(--clr-accent-dark)', fontWeight: 600 }}>{lang === 'en' ? 'Closed' : 'Tutup'}</span>
-                </p>
-              </div>
-            </div>
+
           </div>
         </div>
 
@@ -161,7 +169,7 @@ export default function Footer() {
           <h4 className={styles.colTitle}>{lang === 'en' ? 'Find Us' : 'Cari Kami'}</h4>
           <div style={{ width: '100%', height: '110px', overflow: 'hidden', borderRadius: '8px', border: '1px solid var(--clr-border)' }}>
             <iframe
-              src="https://maps.google.com/maps?q=Gong%20Badak,%20Terengganu&t=&z=14&ie=UTF8&iwloc=&output=embed"
+              src="https://maps.google.com/maps?q=GAT%20Services%20Sdn%20Bhd,%20Lot%2013106,%20Kawasan%20Perindustrian%20Gong%20Badak&t=&z=14&ie=UTF8&iwloc=&output=embed"
               width="100%"
               height="100%"
               style={{ border: 0 }}

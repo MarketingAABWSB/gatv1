@@ -45,7 +45,7 @@ export const services: Service[] = [
     },
     fullDesc: {
       en: 'We provide comprehensive vehicle repair and maintenance services for diesel engine vehicles, including trucks, buses, and heavy machinery. From routine servicing to major overhauls, our technical team is equipped to handle each job systematically with a high-clearance facility.',
-      ms: 'Perkhidmatan membaik pulih kenderaan ini disediakan untuk kesemua kenderaan berenjin diesel. Skop kerja kami meliputi pelbagai keperluan penyelenggaraan serta pembaikan secara sistematik untuk lori, bas, dan jentera berat dengan fasiliti berkelegaan tinggi.',
+      ms: 'Servis membaik pulih kenderaan ini disediakan untuk kesemua kenderaan berenjin diesel. Skop kerja kami meliputi pelbagai keperluan penyelenggaraan serta pembaikan secara sistematik untuk lori, bas, dan jentera berat dengan fasiliti berkelegaan tinggi.',
     },
     features: {
       en: [
@@ -89,7 +89,7 @@ export const services: Service[] = [
     },
     fullDesc: {
       en: 'We provide comprehensive vehicle repair and maintenance services for petrol engine light vehicles. From routine servicing to major overhauls, our technical team is equipped to handle each job systematically for both personal and corporate clients.',
-      ms: 'Perkhidmatan membaik pulih kenderaan ini disediakan untuk kesemua kenderaan ringan berenjin petrol. Skop kerja kami meliputi pelbagai keperluan penyelenggaraan serta pembaikan secara sistematik untuk pelanggan persendirian mahupun syarikat.',
+      ms: 'Servis membaik pulih kenderaan ini disediakan untuk kesemua kenderaan ringan berenjin petrol. Skop kerja kami meliputi pelbagai keperluan penyelenggaraan serta pembaikan secara sistematik untuk pelanggan persendirian mahupun syarikat.',
     },
     features: {
       en: [
@@ -129,11 +129,11 @@ export const services: Service[] = [
     },
     shortDesc: {
       en: 'Preparation services for vehicles before submission to PUSPAKOM for permit approval.',
-      ms: 'Perkhidmatan persediaan kenderaan sebelum dihantar ke PUSPAKOM bagi kelulusan permit.',
+      ms: 'Servis persediaan kenderaan sebelum dihantar ke PUSPAKOM bagi kelulusan permit.',
     },
     fullDesc: {
       en: 'GAT is trusted by multiple government agencies to prepare vehicles before submission to PUSPAKOM for "fit for use" permit approval. We deliver efficient, high-quality service in line with the responsibility entrusted to us.',
-      ms: 'Kepercayaan telah diberikan kepada GAT oleh beberapa agensi kerajaan untuk menyediakan perkhidmatan persediaan kenderaan sebelum dihantar ke PUSPAKOM bagi tujuan kelulusan permit "boleh guna". Kami menekankan perkhidmatan yang cekap dan bermutu selaras dengan tanggungjawab yang diamanahkan.',
+      ms: 'Kepercayaan telah diberikan kepada GAT oleh beberapa agensi kerajaan untuk menyediakan servis persediaan kenderaan sebelum dihantar ke PUSPAKOM bagi tujuan kelulusan permit "boleh guna". Kami menekankan servis yang cekap dan bermutu selaras dengan tanggungjawab yang diamanahkan.',
     },
     features: {
       en: ['Pre-inspection diagnostics', 'Safety standard compliance checks', 'Commercial vehicle permit preparation'],
@@ -151,15 +151,15 @@ export const services: Service[] = [
     icon: 'engine',
     title: {
       en: '24-Hour Breakdown Service',
-      ms: 'Perkhidmatan Bergerak (Breakdown 24 Jam)',
+      ms: 'Servis Bergerak (Breakdown 24 Jam)',
     },
     shortDesc: {
       en: '24-hour mobile assistance for vehicles that break down during transit.',
-      ms: 'Perkhidmatan bantuan bergerak 24 jam untuk kenderaan yang rosak semasa dalam perjalanan.',
+      ms: 'Servis bantuan bergerak 24 jam untuk kenderaan yang rosak semasa dalam perjalanan.',
     },
     fullDesc: {
       en: 'GAT provides 24-hour mobile support for vehicles that break down on the road. In many cases, on-site repair is more economical than towing the vehicle to the workshop, except for major technical failures.',
-      ms: 'GAT juga menyediakan perkhidmatan bergerak 24 jam untuk kenderaan yang rosak semasa dalam perjalanan. Dalam banyak keadaan, pembaikan di lokasi adalah lebih ekonomik berbanding ditunda ke bengkel, kecuali bagi kerosakan teknikal yang besar.',
+      ms: 'GAT juga menyediakan servis bergerak 24 jam untuk kenderaan yang rosak semasa dalam perjalanan. Dalam banyak keadaan, pembaikan di lokasi adalah lebih ekonomik berbanding ditunda ke bengkel, kecuali bagi kerosakan teknikal yang besar.',
     },
     features: {
       en: ['24/7 emergency response', 'On-site minor repairs', 'Economical cost-saving approach'],

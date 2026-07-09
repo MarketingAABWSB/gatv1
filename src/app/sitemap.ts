@@ -1,7 +1,5 @@
 import { MetadataRoute } from 'next';
 import { services } from '@/data/services';
-import { projects } from '@/data/projects';
-import { bulletinPosts } from '@/data/bulletin';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   // Use the environment variable for your production domain, or fallback to the actual domain
@@ -11,11 +9,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
     '',
     '/about-us',
-    '/blog',
-    '/bulletin',
-    '/car-insurance',
-    '/newsletter',
-    '/projek',
     '/services',
   ];
 
@@ -33,19 +26,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  const projectEntries = projects.map((project) => ({
-    url: `${baseUrl}/projek/${project.slug}`,
-    lastModified: new Date(),
-    changeFrequency: 'monthly' as const,
-    priority: 0.7,
-  }));
-
-  const bulletinEntries = bulletinPosts.map((post: any) => ({
-    url: `${baseUrl}/bulletin/${post.slug}`,
-    lastModified: new Date(post.date),
-    changeFrequency: 'monthly' as const,
-    priority: 0.7,
-  }));
-
-  return [...staticEntries, ...serviceEntries, ...projectEntries, ...bulletinEntries];
+  return [...staticEntries, ...serviceEntries];
 }

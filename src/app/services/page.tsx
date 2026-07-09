@@ -48,7 +48,7 @@ export default function ServicesPage() {
         <div className={styles.heroOverlay} />
         <div className={`container ${styles.heroInner}`}>
           <span className={styles.heroLabel}>
-            {lang === 'en' ? 'OUR SERVICES' : 'PERKHIDMATAN KAMI'}
+            {lang === 'en' ? 'OUR SERVICES' : 'SERVIS KAMI'}
           </span>
           <h1 className={styles.heroTitle}>
             {lang === 'en'
@@ -90,7 +90,7 @@ export default function ServicesPage() {
               {lang === 'en' ? 'WHAT WE OFFER' : 'APA YANG KAMI TAWARKAN'}
             </span>
             <h2 className={styles.listTitle}>
-              {lang === 'en' ? 'Our Service Portfolio' : 'Portfolio Perkhidmatan Kami'}
+              {lang === 'en' ? 'Our Service Portfolio' : 'Portfolio Servis Kami'}
             </h2>
           </div>
 
@@ -158,7 +158,7 @@ export default function ServicesPage() {
                 : "Hubungi pasukan kami untuk penilaian awal, dan kami akan mencadangkan servis yang paling sesuai untuk kenderaan anda."}
             </p>
             <a 
-              href="https://wa.me/60192752637" 
+              href="https://api.whatsapp.com/send/?phone=60199391284&text&type=phone_number&app_absent=0" 
               className={styles.ctaBtn}
               target="_blank"
               rel="noopener noreferrer"

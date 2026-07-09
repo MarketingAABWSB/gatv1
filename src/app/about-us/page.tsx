@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useLang } from '@/context/LangContext';
+import { services } from '@/data/services';
 import styles from './page.module.css';
 
 export default function AboutPage() {
@@ -12,16 +13,16 @@ export default function AboutPage() {
     {
       label: lang === 'en' ? 'VISION' : 'VISI',
       title: lang === 'en' ? 'Our Vision' : 'Visi Kami',
-      text: lang === 'en' 
-        ? 'To be a leading Bumiputera company playing a major role in the automotive industry.' 
+      text: lang === 'en'
+        ? 'To be a leading Bumiputera company playing a major role in the automotive industry.'
         : 'Visi GAT adalah untuk menjadi sebuah syarikat bumiputra terkemuka yang memainkan peranan utama dalam bidang automotif.',
     },
     {
       label: lang === 'en' ? 'MISSION' : 'MISI',
       title: lang === 'en' ? 'Our Mission' : 'Misi Kami',
-      text: lang === 'en' 
-        ? 'To provide comprehensive and competitive vehicle repair services that meet customer needs. GAT also acts as an advisor to ensure customers maintain their vehicles properly and correctly. To ensure this mission runs smoothly, GAT is committed to its work, ensuring the labor and parts used are of high quality, while fostering responsible and dedicated employees in carrying out their duties.' 
-        : 'Misi GAT adalah untuk menyediakan perkhidmatan membaikpulih kenderaan yang komprenhensif serta berdaya saing bagi memenuhi kehendak pelanggan. GAT juga akan berperanan menjadi penasihat bagi memastikan para pelanggannya menjaga kenderaan dengan baik dan dengan cara yang betul. Bagi memastikan misi ini berjalan dengan lancar, GAT akan komited dengan kerja, memastikan kerja dan barang yang digunakan adalah baik dan berkualiti, serta melahirkan pekerja-pekerja yang bertanggungjawab dan berdedikasi semasa menjalankan tugas mereka.',
+      text: lang === 'en'
+        ? 'To provide comprehensive and competitive vehicle repair services that meet customer needs. GAT also acts as an advisor to ensure customers maintain their vehicles properly and correctly. To ensure this mission runs smoothly, GAT is committed to its work, ensuring the labor and parts used are of high quality, while fostering responsible and dedicated employees in carrying out their duties.'
+        : 'Misi GAT adalah untuk menyediakan servis membaikpulih kenderaan yang komprenhensif serta berdaya saing bagi memenuhi kehendak pelanggan. GAT juga akan berperanan menjadi penasihat bagi memastikan para pelanggannya menjaga kenderaan dengan baik dan dengan cara yang betul. Bagi memastikan misi ini berjalan dengan lancar, GAT akan komited dengan kerja, memastikan kerja dan barang yang digunakan adalah baik dan berkualiti, serta melahirkan pekerja-pekerja yang bertanggungjawab dan berdedikasi semasa menjalankan tugas mereka.',
     },
   ];
 
@@ -90,7 +91,7 @@ export default function AboutPage() {
             <p className={styles.storyPara}>
               {lang === 'en'
                 ? 'GAT Services Sendirian Berhad (GAT SERVICES SDN BHD) is an automotive service company focused on repair and maintenance for petrol-engine vehicles (light vehicles) and diesel-engine vehicles (heavy machinery / commercial vehicles).'
-                : 'Syarikat GAT Services Sendirian Berhad (GAT SERVICES SDN BHD) merupakan sebuah perniagaan berteraskan perkhidmatan automotif dengan menjalankan aktiviti utama perniagaan iaitu perkhidmatan membaik pulih dan menyelenggara kenderaan berenjin petrol (kenderaan ringan) dan juga kenderaan berenjin diesel (jentera berat/ kenderaan berat perdagangan).'}
+                : 'Syarikat GAT Services Sendirian Berhad (GAT SERVICES SDN BHD) merupakan sebuah perniagaan berteraskan servis automotif dengan menjalankan aktiviti utama perniagaan iaitu servis membaik pulih dan menyelenggara kenderaan berenjin petrol (kenderaan ringan) dan juga kenderaan berenjin diesel (jentera berat/ kenderaan berat perdagangan).'}
             </p>
             <p className={styles.storyPara}>
               {lang === 'en'
@@ -98,7 +99,7 @@ export default function AboutPage() {
                 : 'GAT SERVICES SDN BHD dahulunya di kenali sebagai German Auto Tech Enterprise merupakan syarikat milik Bumiputera sepenuhnya yang mula beroperasi pada Jun 2015 di Kawasan Perindustrian Gong Badak, Kuala Terengganu, Terengganu Darul Iman. Setelah dua tahun beroperasi dengan lancar, syarikat ini dinaiktaraf sebagai syarikat Sendirian Berhad pada 11hb Ogos 2017 dengan nama GAT SERVICES SDN BHD.'}
             </p>
             <Link href="/services" className={styles.storyBtn}>
-              {lang === 'en' ? 'View Our Services' : 'Lihat Perkhidmatan'} →
+              {lang === 'en' ? 'View Our Services' : 'Lihat Servis'} →
             </Link>
           </div>
           <div className={styles.storyRight}>
@@ -157,7 +158,7 @@ export default function AboutPage() {
               </span>
               <div className={styles.servicesBigNum}>3</div>
               <p className={styles.servicesBigLabel}>
-                {lang === 'en' ? 'Core Service Scopes' : 'Skop Perkhidmatan Utama'}
+                {lang === 'en' ? 'Core Service Scopes' : 'Skop Servis Utama'}
               </p>
             </div>
             <div className={styles.servicesRight}>
@@ -167,17 +168,10 @@ export default function AboutPage() {
                   : 'GAT SERVICES SDN BHD menyediakan sokongan kenderaan yang menyeluruh, tersusun, dan boleh dipercayai untuk individu serta organisasi.'}
               </p>
               <div className={styles.servicesTags}>
-                {[
-                  lang === 'en' ? 'Engine Repair' : 'Pembaikan Enjin',
-                  lang === 'en' ? 'Computer Diagnostics' : 'Diagnosis Komputer',
-                  lang === 'en' ? 'Air Conditioning' : 'Penghawa Dingin',
-                  lang === 'en' ? 'Suspension' : 'Sistem Ampaian',
-                  lang === 'en' ? 'Gearbox' : 'Gearbox',
-                  lang === 'en' ? 'Electrical Wiring' : 'Pendawaian Elektrik',
-                  lang === 'en' ? 'PUSPAKOM Prep' : 'Persediaan PUSPAKOM',
-                  lang === 'en' ? '24-Hour Breakdown' : 'Breakdown 24 Jam',
-                ].map((tag) => (
-                  <span key={tag} className={styles.serviceTag}>{tag}</span>
+                {services.map((service) => (
+                  <span key={service.slug} className={styles.serviceTag}>
+                    {service.title[lang as 'en' | 'ms']}
+                  </span>
                 ))}
               </div>
               <Link href="/services" className={styles.servicesBtn}>
@@ -275,9 +269,9 @@ export default function AboutPage() {
             </h2>
           </div>
           <div className={styles.orgChartWrap}>
-            <Image 
-              src="/assets/org-chart.png" 
-              alt="Carta Organisasi GAT" 
+            <Image
+              src="/assets/org-chart2.png"
+              alt="Carta Organisasi GAT"
               width={820}
               height={492}
               quality={95}

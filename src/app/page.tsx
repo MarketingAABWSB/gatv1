@@ -53,9 +53,9 @@ export default function Home() {
                 <Link href="/services" className={styles.btnPrimary}>
                   {lang === 'en' ? 'Explore Our Services' : 'Teroka Servis Kami'}
                 </Link>
-                <Link href="/about-us" className={styles.btnSecondary}>
-                  {lang === 'en' ? 'Learn More' : 'Ketahui Lebih Lanjut'}
-                </Link>
+                <a href="tel:096674832" className={styles.btnSecondary}>
+                  {lang === 'en' ? 'Contact Office' : 'Hubungi Pejabat'}
+                </a>
               </div>
             </div>
 
@@ -63,7 +63,7 @@ export default function Home() {
               <p className={styles.heroDesc}>
                 {lang === 'en'
                   ? 'Comprehensive automotive services for diesel and petrol vehicles, supported by transparent Webmax records, OEM diagnostics, and 24-hour mobile breakdown support in Terengganu.'
-                  : 'Perkhidmatan automotif menyeluruh untuk kenderaan diesel dan petrol, disokong rekod Webmax yang telus, diagnostik OEM, dan bantuan breakdown bergerak 24 jam di Terengganu.'}
+                  : 'Servis automotif menyeluruh untuk kenderaan diesel dan petrol, disokong rekod Webmax yang telus, diagnostik OEM, dan bantuan breakdown bergerak 24 jam di Terengganu.'}
               </p>
             </div>
           </div>
@@ -171,7 +171,7 @@ export default function Home() {
       <section className={styles.servicesSection} id="services">
         <div className="container">
           <div className={styles.sectionHeader}>
-            <h2>{lang === 'en' ? 'Core Services' : 'Perkhidmatan Utama'}</h2>
+            <h2>{lang === 'en' ? 'Core Services' : 'Servis Utama'}</h2>
             <p>
               {lang === 'en'
                 ? 'From passenger vehicles to heavy machinery, our team delivers practical and reliable technical support.'
@@ -244,11 +244,11 @@ export default function Home() {
               >
               </div>
               <div className={styles.serviceContent}>
-                <h3>{lang === 'en' ? '24-Hour Mobile Breakdown' : 'Perkhidmatan Bergerak (24 Jam)'}</h3>
+                <h3>{lang === 'en' ? '24-Hour Mobile Breakdown' : 'Servis Bergerak (24 Jam)'}</h3>
                 <p>
                   {lang === 'en'
                     ? 'Mobile rescue service for vehicles broken down during transit. We repair on-site whenever possible.'
-                    : 'Menyediakan perkhidmatan van bergerak (door-to-door) 24 jam untuk kes-kes kerosakan / breakdown di jalanan.'}
+                    : 'Menyediakan servis van bergerak (door-to-door) 24 jam untuk kes-kes kerosakan / breakdown di jalanan.'}
                 </p>
                 <div className={styles.serviceLink}>
                   {lang === 'en' ? 'LEARN MORE →' : 'LEBIH LANJUT →'}
