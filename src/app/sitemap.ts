@@ -3,7 +3,7 @@ import { services } from '@/data/services';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   // Use the environment variable for your production domain, or fallback to the actual domain
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://gatservices.com';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://gatservices.com.my';
 
   // List all your static routes here
   const routes = [

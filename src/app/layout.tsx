@@ -6,7 +6,7 @@ import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import '@/styles/globals.css';
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://azamauto.com'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://gatservices.com.my'),
   title: {
     default: 'GAT SERVICES & SERVICES (M) SDN BHD',
     template: '%s | GAT SERVICES',
