@@ -148,7 +148,7 @@ export default function Footer() {
                     {lang === 'en' ? 'Emergency 2' : 'Kecemasan 2'}
                   </span>
                   <br />
-                  <a href="https://api.whatsapp.com/send/?phone=60199391284&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className={styles.footerLink}>019-6671284</a>
+                  <a href="https://api.whatsapp.com/send/?phone=60196671284&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className={styles.footerLink}>019-6671284</a>
                 </div>
               </div>
             </div>
@@ -158,6 +158,20 @@ export default function Footer() {
                 <polyline points="22,6 12,13 2,6" />
               </svg>
               <a href="mailto:gatservices0817@gmail.com" className={styles.footerLink}>gatservices0817@gmail.com</a>
+            </div>
+            <div className={styles.contactItem} style={{ alignItems: 'flex-start' }}>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className={styles.contactIcon} style={{ marginTop: '4px' }}>
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+              <div style={{ display: 'flex', flexDirection: 'column' }}>
+                <span style={{ fontSize: '0.72rem', color: 'rgba(255,255,255,0.4)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                  {lang === 'en' ? 'Operating Hours' : 'Waktu Operasi'}
+                </span>
+                <span style={{ fontSize: '0.85rem', marginTop: '2px' }}>
+                  {lang === 'en' ? 'Sat - Thu: 9:30 am - 5:30 pm' : 'Sabtu - Khamis: 9.30 pagi - 5.30 ptg'}
+                </span>
+              </div>
             </div>
 
 
