@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useLang } from '@/context/LangContext';
+import SocialSection from '@/components/SocialSection';
 import styles from './page.module.css';
 import {
   Laptop,
@@ -73,7 +74,7 @@ export default function Home() {
 
 
       {/* Trust Bar */}
-      <div className={styles.trustBar}>
+      <div className={`${styles.trustBar} lightTheme`}>
         <div className="container">
           <div className={styles.trustTitle}>
             {lang === 'en' ? 'Trusted By Industries & Government Agencies' : 'Dipercayai Oleh Industri & Agensi Kerajaan'}
@@ -101,7 +102,7 @@ export default function Home() {
       </div>
 
       {/* Bento Grid (Kelebihan) */}
-      <section className={styles.bentoSection} id="overview">
+      <section className={`${styles.bentoSection} lightTheme`} id="overview">
         <div className="container">
           <div className={styles.bentoIntro}>
             <div className={styles.sectionHeader}>
@@ -293,6 +294,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Social Media Section */}
+      <SocialSection />
     </>
   );
 }

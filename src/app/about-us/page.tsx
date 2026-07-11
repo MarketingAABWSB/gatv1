@@ -30,7 +30,14 @@ export default function AboutPage() {
     <>
       {/* ── DARK HERO — fixes navbar visibility ── */}
       <section className={styles.heroSection}>
-        <div className={styles.heroBgImg} style={{ background: '#333' }} />
+        <Image
+          src="/assets/gat-hero-bg.jpg"
+          alt="GAT Services"
+          fill
+          style={{ objectFit: 'cover' }}
+          className={styles.heroBgImg}
+          priority
+        />
         <div className={styles.heroOverlay} />
         <div className={`container ${styles.heroInner}`}>
           <span className={styles.heroLabel}>
@@ -38,8 +45,8 @@ export default function AboutPage() {
           </span>
           <h1 className={styles.heroTitle}>
             {lang === 'en'
-              ? 'Professional Service,\nBuilt on Experience.'
-              : 'Penjagaan Profesional,\nDiperkukuh oleh Pengalaman.'}
+              ? 'Automotive Expertise,\nDelivered with Integrity.'
+              : 'Kepakaran Automotif Terunggul,\nBerteraskan Integriti.'}
           </h1>
           <p className={styles.heroSub}>
             {lang === 'en'
@@ -84,8 +91,8 @@ export default function AboutPage() {
             </span>
             <h2 className={styles.sectionTitle}>
               {lang === 'en'
-                ? 'Built on Trust,\nDriven by Discipline.'
-                : 'Dibina atas Kepercayaan,\nBerkembang dengan Kecemerlangan.'}
+                ? 'Proven Track Record,\nUncompromising Standards.'
+                : 'Rekod Prestasi Terbukti,\nStandard Tanpa Kompromi.'}
             </h2>
             <div className={styles.storyDivider} />
             <p className={styles.storyPara}>
@@ -131,8 +138,8 @@ export default function AboutPage() {
             </span>
             <h2 className={styles.vmmoTitle}>
               {lang === 'en'
-                ? 'Guided by Vision,\nCommitted in Service.'
-                : 'Berasas Nilai,\nDipacu oleh Misi.'}
+                ? 'Focused Vision,\nQuality-Driven Execution.'
+                : 'Wawasan Terarah,\nPelaksanaan Berpaksikan Kualiti.'}
             </h2>
           </div>
           <div className={styles.vmmoGrid}>
@@ -258,7 +265,7 @@ export default function AboutPage() {
       </section>
 
       {/* ── TEAM / ORG CHART ── */}
-      <section className={`section ${styles.teamSection}`}>
+      <section className={`section ${styles.teamSection} lightTheme`}>
         <div className="container">
           <div className={styles.teamHeader}>
             <span className={styles.sectionTag}>

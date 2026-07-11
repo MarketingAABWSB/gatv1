@@ -1,26 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&family=Orbitron:wght@700;900&display=swap');
 
 /* =============================================
    CSS VARIABLES — LIGHT MODE DESIGN TOKENS
 ============================================= */
 :root {
-  /* Light Mode Colors */
+  /* Logo Theme Colors */
+  --clr-bg:          #0f172a;
+  --clr-bg-2:        #1e293b;
+  --clr-bg-3:        #334155;
+  --clr-surface:     #0f172a;
+  --clr-surface-2:   #1e293b;
+  --clr-border:      rgba(255,255,255,0.1);
+  --clr-accent:      #ffe600; /* Bright Yellow from logo */
+  --clr-accent-dark: #ffd700;
+  --clr-accent-glow: rgba(255, 230, 0, 0.2);
+  --clr-silver:      #94a3b8;
+  --clr-text:        #f8fafc;
+  --clr-text-2:      #cbd5e1;
+  --clr-text-3:      #94a3b8;
+  --clr-white:       #ffffff;
+  --clr-shadow:      rgba(0,0,0,0.5);
+}
+
+.lightTheme {
   --clr-bg:          #f8f7f5;
   --clr-bg-2:        #f0eeeb;
   --clr-bg-3:        #e8e5e1;
   --clr-surface:     #ffffff;
   --clr-surface-2:   #f4f2ef;
   --clr-border:      rgba(0,0,0,0.08);
-  --clr-accent:      #3b82f6; /* Modern Blue for GAT Services */
-  --clr-accent-dark: #2563eb;
-  --clr-accent-glow: rgba(59, 130, 246, 0.2);
-  --clr-silver:      #6b6b6b;
   --clr-text:        #1a1a1a;
   --clr-text-2:      #555555;
   --clr-text-3:      #999999;
-  --clr-white:       #1a1a1a;   /* "white" in dark mode = near-black in light */
   --clr-shadow:      rgba(0,0,0,0.06);
+}
 
+:root {
   /* Typography */
   --font-heading: 'Outfit', sans-serif;
   --font-body:    'Inter', sans-serif;

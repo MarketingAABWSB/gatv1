@@ -10,6 +10,7 @@ export const translations = {
     projek: { en: 'Projects & Programs', ms: 'Projek & Program' },
 
     blog: { en: 'Blog', ms: 'Blog' },
+    followUs: { en: 'Follow Us', ms: 'Ikuti Kami' },
     contactUs: { en: 'Contact Us', ms: 'Hubungi Kami' },
   },
 

@@ -53,7 +53,7 @@ export default function ServicesPage() {
           <h1 className={styles.heroTitle}>
             {lang === 'en'
               ? 'Comprehensive Services,\nOne Trusted Workshop.'
-              : 'Setiap Servis,\nSatu Bengkel Dipercayai.'}
+              : 'Satu Bengkel,\nSetiap Servis Dipercayai.'}
           </h1>
           <p className={styles.heroSub}>
             {lang === 'en'
@@ -90,7 +90,7 @@ export default function ServicesPage() {
               {lang === 'en' ? 'WHAT WE OFFER' : 'APA YANG KAMI TAWARKAN'}
             </span>
             <h2 className={styles.listTitle}>
-              {lang === 'en' ? 'Our Service Portfolio' : 'Portfolio Servis Kami'}
+              {lang === 'en' ? 'Our Services' : 'Servis Kami'}
             </h2>
           </div>
 
