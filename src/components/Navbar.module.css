@@ -100,6 +100,7 @@
   color: rgba(255, 255, 255, 0.85);
   border-radius: var(--radius-sm);
   transition: var(--transition);
+  white-space: nowrap;
 }
 
 .link:hover {
@@ -231,7 +232,7 @@
 }
 
 /* Responsive */
-@media (min-width: 900px) {
+@media (min-width: 1024px) {
   .navbar {
     padding: 1.5rem 1.5rem;
   }
