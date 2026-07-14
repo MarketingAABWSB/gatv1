@@ -48,9 +48,7 @@ export default function SocialSection() {
     <section className={`${styles.socialSection} lightTheme`} id="ikuti-kami">
       <div className="container">
         <div className={styles.sectionHeader}>
-          <span className={styles.sectionTag}>
-            {lang === 'en' ? 'STAY CONNECTED' : 'IKUTI KAMI'}
-          </span>
+
           <h2 className={styles.sectionTitle}>
             {lang === 'en' ? 'Follow Our Journey' : 'Perkembangan Semasa GAT'}
           </h2>

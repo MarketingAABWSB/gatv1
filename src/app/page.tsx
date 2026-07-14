@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useLang } from '@/context/LangContext';
 import SocialSection from '@/components/SocialSection';
+import FacilitySlider from '@/components/FacilitySlider';
 import styles from './page.module.css';
 import {
   Laptop,
@@ -272,26 +273,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className={styles.gallery}>
-            <div className={styles.galleryItem}>
-              <img src="/assets/fasiliti/waiting-room.png" alt="Ruang Menunggu" />
-              <div className={styles.galleryOverlay}>
-                {lang === 'en' ? 'Waiting Area (Air-Conditioned & Surau)' : 'Ruang Menunggu (Berhawa Dingin & Surau)'}
-              </div>
-            </div>
-            <div className={styles.galleryItem}>
-              <img src="/assets/bahagian-diesel/2.png" alt="Ruang Kerja" />
-              <div className={styles.galleryOverlay}>
-                {lang === 'en' ? 'Spacious Workspace Capacity' : 'Kapasiti Ruang Kerja Luas'}
-              </div>
-            </div>
-            <div className={styles.galleryItem}>
-              <img src="/assets/fasiliti/stor-alat-ganti-1.png" alt="Stor Alat Ganti" />
-              <div className={styles.galleryOverlay}>
-                {lang === 'en' ? 'Fully Stocked Spare Parts Store' : 'Stor Alat Ganti / Spare Parts Lengkap'}
-              </div>
-            </div>
-          </div>
+          <FacilitySlider lang={lang} />
         </div>
       </section>
 

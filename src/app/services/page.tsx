@@ -10,22 +10,22 @@ import styles from './page.module.css';
 const iconMap: Record<string, React.ReactNode> = {
   engine: (
     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-      <rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/>
+      <rect x="2" y="7" width="20" height="14" rx="2" /><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" /><line x1="12" y1="12" x2="12" y2="16" /><line x1="10" y1="14" x2="14" y2="14" />
     </svg>
   ),
   car: (
     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M5 17H3a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h14l4 4v4a2 2 0 0 1-2 2h-2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/>
+      <path d="M5 17H3a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h14l4 4v4a2 2 0 0 1-2 2h-2" /><circle cx="7" cy="17" r="2" /><circle cx="17" cy="17" r="2" />
     </svg>
   ),
   ac: (
     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M8 3v4m8-4v4M3 8h18M3 16h18m-9-8v8m-4-4h8"/><rect x="2" y="6" width="20" height="12" rx="2"/>
+      <path d="M8 3v4m8-4v4M3 8h18M3 16h18m-9-8v8m-4-4h8" /><rect x="2" y="6" width="20" height="12" rx="2" />
     </svg>
   ),
   gear: (
     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-      <circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 0-14.14 0M4.93 19.07a10 10 0 0 0 14.14 0M19.07 19.07a10 10 0 0 0 0-14.14M4.93 4.93a10 10 0 0 0 0 14.14"/>
+      <circle cx="12" cy="12" r="3" /><path d="M19.07 4.93a10 10 0 0 0-14.14 0M4.93 19.07a10 10 0 0 0 14.14 0M19.07 19.07a10 10 0 0 0 0-14.14M4.93 4.93a10 10 0 0 0 0 14.14" />
     </svg>
   ),
 };
@@ -38,7 +38,7 @@ export default function ServicesPage() {
       {/* ── DARK HERO ── */}
       <section className={styles.heroSection}>
         <Image
-          src="/assets/gat-hero-bg.jpg"
+          src="/assets/gat-hero-bg.jpeg"
           alt="GAT Services"
           fill
           style={{ objectFit: 'cover' }}
@@ -157,8 +157,8 @@ export default function ServicesPage() {
                 ? "Contact our team for an initial assessment, and we will recommend the most suitable service for your vehicle."
                 : "Hubungi pasukan kami untuk penilaian awal, dan kami akan mencadangkan servis yang paling sesuai untuk kenderaan anda."}
             </p>
-            <a 
-              href="https://api.whatsapp.com/send/?phone=60199391284&text&type=phone_number&app_absent=0" 
+            <a
+              href="https://api.whatsapp.com/send/?phone=60199391284&text&type=phone_number&app_absent=0"
               className={styles.ctaBtn}
               target="_blank"
               rel="noopener noreferrer"

@@ -60,7 +60,16 @@ export default function Navbar() {
         </button>
 
         {/* Logo */}
-        <Link href="/" className={styles.logo}>
+        <Link 
+          href="/" 
+          className={styles.logo}
+          onClick={(e) => {
+            if (pathname === '/') {
+              e.preventDefault();
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+          }}
+        >
           <img
             src="/assets/gat-logo.png?v=2"
             alt="GAT Logo"
@@ -101,7 +110,16 @@ export default function Navbar() {
                     {l.label}
                   </a>
                 ) : (
-                  <Link href={l.href} className={`${styles.link} ${isActive(l.href) ? styles.active : ''}`}>
+                  <Link 
+                    href={l.href} 
+                    className={`${styles.link} ${isActive(l.href) ? styles.active : ''}`}
+                    onClick={(e) => {
+                      if (l.href === '/' && pathname === '/') {
+                        e.preventDefault();
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                      }
+                    }}
+                  >
                     {l.label}
                   </Link>
                 )}
@@ -157,7 +175,13 @@ export default function Navbar() {
                 <Link
                   href={l.href}
                   className={`${styles.mobileLink} ${isActive(l.href) ? styles.mobileActive : ''}`}
-                  onClick={() => setMenuOpen(false)}
+                  onClick={(e) => {
+                    if (l.href === '/' && pathname === '/') {
+                      e.preventDefault();
+                      window.scrollTo({ top: 0, behavior: 'smooth' });
+                    }
+                    setMenuOpen(false);
+                  }}
                 >
                   {l.label}
                 </Link>

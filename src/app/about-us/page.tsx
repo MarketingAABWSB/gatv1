@@ -31,7 +31,7 @@ export default function AboutPage() {
       {/* ── DARK HERO — fixes navbar visibility ── */}
       <section className={styles.heroSection}>
         <Image
-          src="/assets/gat-hero-bg.jpg"
+          src="/assets/gat-hero-bg.jpeg"
           alt="GAT Services"
           fill
           style={{ objectFit: 'cover' }}
@@ -112,7 +112,7 @@ export default function AboutPage() {
           <div className={styles.storyRight}>
             <div className={styles.storyImgWrap}>
               <Image
-                src="/assets/bahagian-petrol/2.png"
+                src="/assets/bahagian-petrol/2-2.jpeg"
                 alt={lang === 'en' ? 'GAT workshop team and facility' : 'Pasukan dan fasiliti bengkel GAT'}
                 width={1200}
                 height={900}
