@@ -139,11 +139,12 @@ export const services: Service[] = [
       en: ['Pre-inspection diagnostics', 'Safety standard compliance checks', 'Commercial vehicle permit preparation'],
       ms: ['Diagnosis sebelum pemeriksaan', 'Pemeriksaan pematuhan piawaian keselamatan', 'Persediaan permit kenderaan komersial'],
     },
-    image: '/assets/bahagian-diesel/4.png',
+    image: '/assets/puspakom/1.jpeg',
     gallery: [
-      '/assets/bahagian-diesel/2.png',
-      '/assets/bahagian-diesel/3.png',
-      '/assets/bahagian-diesel/5.png'
+      '/assets/puspakom/2.jpeg',
+      '/assets/puspakom/3.jpeg',
+      '/assets/puspakom/4.jpeg',
+      '/assets/puspakom/5.jpeg'
     ],
   },
   {

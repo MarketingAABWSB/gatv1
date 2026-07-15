@@ -223,7 +223,7 @@ export default function Home() {
             <Link href="/services/puspakom-inspection" className={styles.serviceCard}>
               <div
                 className={styles.serviceImg}
-                style={{ backgroundImage: "url('/assets/bahagian-diesel/4.png')" }}
+                style={{ backgroundImage: "url('/assets/puspakom/1.jpeg')" }}
               >
               </div>
               <div className={styles.serviceContent}>
